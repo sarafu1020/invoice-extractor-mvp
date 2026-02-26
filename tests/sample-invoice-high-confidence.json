@@ -1,0 +1,14 @@
+{
+  "invoice_no": "INV-2026-00123",
+  "invoice_date": "2026-02-25",
+  "shipper_name": "KOREA EXPORT CO., LTD.",
+  "consignee_name": "GLOBAL TRADE LLC",
+  "total_amount": 12850,
+  "currency": "USD",
+  "items": [
+    { "description": "WHEAT FLOUR", "quantity": 500, "unit_price": 12.5 },
+    { "description": "UNSALTED BUTTER", "quantity": 120, "unit_price": 35.0 }
+  ],
+  "confidence_score": 96,
+  "low_confidence_fields": []
+}
