@@ -38,7 +38,9 @@ export async function POST(req: Request) {
 
     if (isPdf) {
       // PDF 텍스트 추출 기반 처리 (MVP)
-      const pdfParse = (await import("pdf-parse")).default;
+      // NOTE: use require() to avoid TS declaration issues on serverless build
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      const pdfParse = require("pdf-parse");
       const parsedPdf = await pdfParse(bytes);
       const fullText = parsedPdf?.text || "";
       const pages = fullText.split("\f").filter(Boolean);
