@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import high from "@/tests/sample-invoice-high-confidence.json";
-import low from "@/tests/sample-invoice-low-confidence.json";
+import high from "../../../tests/sample-invoice-high-confidence.json";
+import low from "../../../tests/sample-invoice-low-confidence.json";
 
 export const runtime = "nodejs";
 

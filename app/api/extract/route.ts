@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
-import { invoiceSchema, normalizeDate } from "@/lib/schema";
+import { invoiceSchema, normalizeDate } from "../../../lib/schema";
 
 export const runtime = "nodejs";
 
